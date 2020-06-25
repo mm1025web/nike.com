@@ -332,10 +332,6 @@ sub{
 
 
 
-:root{
-$primary-light-blue: #8DB9ED;
-$primary-line-color: #ccc;
-}
 
 
 footer{
@@ -402,7 +398,7 @@ footer {
   top: 50%;
   left: 10px;
   border-top: 1px solid $primary-line-color;
-  width: calc(100% - 20px)
+  width: calc(100% - 20px);
 }
 .footer-social-overlap {
   position: relative;
