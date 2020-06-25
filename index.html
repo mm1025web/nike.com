@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Nike. Just Do It.</title>
+    <link rel="icon" href="images/nike.png" type="image/ico" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" 
+    crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script>
+        $(document).ready(function(){
+            $("#myModal").modal('show');
+        });
+    </script>
+
+        <!--preloader-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+
+</head>
+<body class="bg">
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h4 class="modal-title text-center">Tap on the product to order</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-md navbar-light sticky-top">
+        <a href="#" class="navbar-brand">
+            <img src="images/nike.png" height="28" >
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+                <a href="#" class="nav-item nav-link active">Home</a>
+                <a href="#" class="nav-item nav-link">About Us</a>
+                <a href="#" class="nav-item nav-link">Contact</a>
+                <!-- <a href="#" class="nav-item nav-link cart"><i class="fas fa-shopping-cart"></i></a> -->
+            </div>
+            
+        </div>
+        <!-- <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form> -->
+    </nav>
+
+            <!-- <div class="container-fluid text-white text-right cart">
+                <i class="fas fa-shopping-cart fa-2x"></i>
+                <i class="fa fa-angle-down arrow"></i>
+            </div> -->
+            <div class="dropdown text-right  cart">
+                <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown">
+                    <i class="fas fa-shopping-cart fa-2x"></i><sub>0</sub>
+                    <span class="caret "></span>
+                    
+                </button>
+                <ul class="dropdown-menu">
+                  <li class="ml-3">Empty!</li>   
+                </ul>
+              </div>
+
+    <div class="container">
+           
+        <div class="row align-items-center">
+            
+            <div class="col-lg-4 col-md-6">
+                <div class="card first" id="card">
+                <div class="imgBx">
+                    <img src="images/shoes.png" alt="" id="image" height="300" width="300">
+                </div>
+                <div class="contentBx">
+                    <h2>₹6,995</h2>
+                    <div class="size">
+                        <h3>Size:</h3>
+                        <span>7</span>
+                        <span>8</span>
+                        <span>9</span>
+                        <span>10</span>
+                    </div>
+                    <div class="color box1">
+                        <h3>Color:</h3>
+                        
+                        <span onclick="changegreen()"></span>
+                        <span onclick="changeblue()"></span>
+                        <span onclick="changepink()"></span>
+                    </div>
+                    <a href="#" data-toggle="modal" data-target="#myModal2">Add to Bag</a>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card" id="card">
+                <div class="imgBx2">
+                    <img src="images/nike41.png" alt="" id="image2" height="260" width="260">
+                </div>
+                <div class="contentBx">
+                    <h2>₹8,999</h2>
+                    <div class="size">
+                        <h3>Size:</h3>
+                        <span>7</span>
+                        <span>8</span>
+                        <span>9</span>
+                        <span>10</span>
+                    </div>
+                    <div class="color box2">
+                        <h3>Color:</h3>
+                        
+                        <span onclick="changeorange()"></span>
+                        <span onclick="changeyellow()"></span>
+                        <span onclick="changesblue()"></span>
+                    </div>
+                    <a href="#" data-toggle="modal" data-target="#myModal2">Add to Bag</a>
+                </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card" id="card">
+            <div class="imgBx3">
+                <img src="images/nike71.png" alt="" id="image3" height="250"  >
+            </div>
+            <div class="contentBx">
+                <h2>₹9,499</h2>
+                <div class="size">
+                    <h3>Size:</h3>
+                    <span>7</span>
+                    <span>8</span>
+                    <span>9</span>
+                    <span>10</span>
+                </div>
+                <div class="color box3">
+                    <h3>Color:</h3>
+                    
+                    <span onclick="changegrey()"></span>
+                    <span onclick="changebluee()"></span>
+                    <span onclick="changeblackk()"></span>
+                </div>
+                <a href="#" data-toggle="modal" data-target="#myModal2">Add to Bag</a>
+            </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- row2 -->
+    <div class="row align-items-center">
+        <div class="col-lg-4 col-md-6">
+            <div class="card card2" id="card">
+            <div class="imgBx3">
+                <img src="images/nike81.png" alt="" id="image4" height="240">
+            </div>
+            <div class="contentBx">
+                <h2>₹7,495</h2>
+                <div class="size">
+                    <h3>Size:</h3>
+                    <span>7</span>
+                    <span>8</span>
+                    <span>9</span>
+                    <span>10</span>
+                </div>
+                <div class="color box4">
+                    <h3>Color:</h3>
+                    
+                    <span onclick="changelblue()"></span>
+                    <span onclick="changedblue()"></span>
+                    <span onclick="changered()"></span>
+                </div>
+                <a href="#" data-toggle="modal" data-target="#myModal2">Add to Bag</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6">
+            <div class="card card2" id="card">
+            <div class="imgBx">
+                <img src="images/nike91.png" alt="" id="image5" height="200">
+            </div>
+            <div class="contentBx">
+                <h2>₹14,999</h2>
+                <div class="size">
+                    <h3>Size:</h3>
+                    <span>7</span>
+                    <span>8</span>
+                    <span>9</span>
+                    <span>10</span>
+                </div>
+                <div class="color box5">
+                    <h3>Color:</h3>
+                    
+                    <span onclick="changeblacck()"></span>
+                    <span onclick="changebluue()"></span>
+                    <span onclick="changegold()"></span>
+                </div>
+                <a href="#" data-toggle="modal" data-target="#myModal2">Add to Bag</a>
+            </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="card card2" id="card">
+        <div class="imgBx3">
+            <img src="images/nike101.png" alt="" id="image6" height="220"  >
+        </div>
+        <div class="contentBx">
+            <h2>₹11,499</h2>
+            <div class="size">
+                <h3>Size:</h3>
+                <span>7</span>
+                <span>8</span>
+                <span>9</span>
+                <span>10</span>
+            </div>
+            <div class="color box6">
+                <h3>Color:</h3>
+                
+                <span onclick="changeredd()"></span>
+                <span onclick="changegolden()"></span>
+                <span onclick="changegreeen()"></span>
+            </div>
+            <a href="#" data-toggle="modal" data-target="#myModal2">Add to Bag</a>
+        </div>
+    </div>
+  </div>
+
+</div>
+  </div>
+  
+  <div id="myModal2" class="modal fade">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <h4 class="modal-title text-center">Currently unavailable!</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            
+        </div>
+    </div>
+</div>
+    <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
