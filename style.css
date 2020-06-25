@@ -42,7 +42,7 @@ nav{
     border: none!important;
 }
 .cart {
-     margin: 10px;
+     margin: 10px 0 0 0 ;
 }
 .btn-dark{
     background: #111111!important;
@@ -339,10 +339,9 @@ footer{
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	margin: auto;
-  display: flex;
-  flex-flow: column nowrap;
-  
-  justify-content: space-between;
+    display: flex;
+    flex-flow: column nowrap;  
+    justify-content: space-between;
 }
 ul {
   list-style: none
@@ -350,7 +349,19 @@ ul {
 a {
   text-decoration: none
 }
-
+.generic-anchor{
+    color: #8DB9ED;
+    transition: all 1s ease-in-out;
+}
+.generic-anchor:visited,.generic-anchor:hover{
+    color: #8DB9ED;
+}
+.generic-anchor i{
+    font-size: 35px;
+}
+.generic-anchor i:hover{
+    transform: translateY(-13px) scale(1.3);
+}
 .flex-rw {
   display: flex;
   flex-flow: row wrap;
@@ -397,7 +408,7 @@ footer {
   z-index: 1;
   top: 50%;
   left: 10px;
-  border-top: 1px solid $primary-line-color;
+  border-top: 1px solid #ccc;
   width: calc(100% - 20px);
 }
 .footer-social-overlap {
@@ -425,7 +436,7 @@ footer {
 .footer-bottom-section {
   width: 100%;
   padding: 10px;
-  border-top: 1px solid $primary-line-color;
+  border-top: 1px solid #ccc;
   margin-top: 10px
 }
 .footer-bottom-section > div:first-child {
