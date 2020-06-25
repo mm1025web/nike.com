@@ -351,7 +351,7 @@ a {
 }
 .generic-anchor{
     color: #8DB9ED;
-    transition: all 1s ease-in-out;
+    transition: all .5s ease-in-out;
 }
 .generic-anchor:visited,.generic-anchor:hover{
     color: #8DB9ED;
@@ -369,7 +369,7 @@ a {
 
 footer {
   background: rgb(55,55,55);
-  margin-top: auto;
+  margin-top: 30px;
   width: 100%
 }
 .footer-list-top {
