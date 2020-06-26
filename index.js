@@ -1,4 +1,4 @@
-$(window).load(function(){
+$(window).ready(function(){
      setTimeout(function(){
          $('#form').modal('show');
      }, 6000);
