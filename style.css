@@ -18,8 +18,9 @@ body{
 nav{
     z-index: 9999999!important;
 }
-#myModal,#myModal2{
+#myModal,#myModal2,#myModal3,#myModal4,#form{
     z-index: 999999999!important;
+    background: rgba(0, 0, 0, 0.5);
     
 }
 
@@ -27,6 +28,7 @@ nav{
 #myModal .modal-title{
     font-size: 20px;
 }
+
 #myModal2 .modal-title{
     font-size: 15px;
 }
@@ -40,6 +42,11 @@ nav{
 .navbar-toggler,.navbar-toggler:active{
     color: white;
     border: none!important;
+}
+.fa-angle-double-down{
+  color: white!important;
+  font-size: 25px;
+  border: none;
 }
 .cart {
      margin: 10px 0 0 0 ;
@@ -370,7 +377,8 @@ a {
 footer {
   background: rgb(55,55,55);
   margin-top: 30px;
-  width: 100%
+  width: 100%;
+  bottom: 0!important;
 }
 .footer-list-top {
   width: 33.333%

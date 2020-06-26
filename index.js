@@ -1,7 +1,48 @@
+$(window).load(function(){
+     setTimeout(function(){
+         $('#form').modal('show');
+     }, 6000);
+  });
 
-function popup(){
-    alert("Unavailable");
-}
+ $(document).ready(function(){
+     $("#myModal").modal('show');
+ });
+
+ function myFunction(x) {
+     x.classList.toggle("fa-angle-up");
+   }
+
+ 
+      var name = document.getElementById("name").value;
+       document.getElementById("Name").value = name;
+      ;
+
+
+
+      function welcomeuser() {
+        var name = document.getElementById("name").value;
+
+        // step 1 create your element
+        var element = document.createElement("h4");
+        // step 2 create your text
+        var text = document.createTextNode("Welcome! "+ name);
+        // step 3 add (or append) your text to your element. Now your element had that new (or appended) value.
+        element.appendChild(text);
+        // step 4 add (or append) your newly created element with text to the tag with this id
+        document.getElementById("Name").appendChild(element);
+      }
+// var button= document.getElementById("clickme"),count=0;
+
+// function increment(){
+//      count+=1;
+//      button.innerHTML = count;     
+     
+// };
+     
+
+
+
+
 function changegreen(){
      document.getElementById("image").src="images/shoes.png";
 }
