@@ -33,7 +33,7 @@
     <!--welcome modal-->
     <div id="myModal" class="modal fade">
         <div class="modal-dialog modal-sm">
-            <div class="modal-content">
+            <div class="modal-content ">
                 <div class="modal-header text-center">
                     <h4 class="modal-title text-center">Tap on the product to order! </h4>
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -56,7 +56,7 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav">
                 <a href="#" class="nav-item nav-link active">Home</a>
-                <a href="#" class="nav-item nav-link">About Us</a>
+                <a href="#" class="nav-item nav-link" data-toggle="modal" data-target="#myModal5">About Us</a>
                 <a href="#" class="nav-item nav-link" data-toggle="modal" data-target="#myModal3">Contact</a>
                 <!-- <a href="#" class="nav-item nav-link cart"><i class="fas fa-shopping-cart"></i></a> -->
             </div>
@@ -71,12 +71,12 @@
   <div class="modal fade" id="form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
-        <div class="modal-header border-bottom-0">
-          <h5 class="modal-title" id="exampleModalLabel">Create an Account</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
+        <div class="modal-header">
+            <h3 class="modal-title font-weight-bolder" id="exampleModalLabel">Create an Account</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
         <form>
           <div class="modal-body">
             <div class="form-group">
@@ -117,6 +117,41 @@
                     </div>
                 </div>
             </div>
+<!-- about modal -->
+
+  
+  <div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title font-weight-bolder" id="exampleModalLabel">About Us</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          
+          <p><b>NIKE</b>, Inc. is an American multinational association that is involved in the design, development, manufacturing
+               and worldwide marketing and sales of apparel, footwear, accessories, equipment and services.</p>
+          <p>The company’s world headquarters are situated near Beaverton, Oregon, in the Portland metropolitan area (USA).
+               It is a major producer of sports equipment and one of the world’s largest suppliers of athletic shoes and apparel.</p>
+          <p>It employs more than 44,000 people worldwide and in 2014 the brand alone was valued as $19 billion (€17,5 billion), 
+              making it the most valuable brand between sports businesses.Founded by Bill Bowerman and Phil Knight on January 25 1964,
+               as Blue Ribbon Sports, the company became officially Nike, Inc.
+               on May 30 1971. The company was named after the Greek goddess of victory, Nike (Νίκη).</p>
+            <p>Apart from its own brand, Nike market its products under Nike Pro, Nike+, Nike Golf, Nike Blazers,
+                 Air Jordan, Air Max and other as well as subsidiaries including brands  Jordan, Hurley Int. and Converse.
+                  Nike sponsors many high-profile athletes and sports teams around the world, with the highly recognized trademarks
+                   of “Just Do It” and the Swoosh logo (which represents the wing of the Greek goddess Nike).</p>   
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-dark" onclick="window.open('https://about.nike.com/');">Read More <i class="fas fa-angle-down"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
 
             <!-- <div class="container-fluid text-white text-right cart">
                 <i class="fas fa-shopping-cart fa-2x"></i>
@@ -311,7 +346,7 @@
         <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-header text-center">
-                <h4 class="modal-title ">Contact Us</h4>
+                <h4 class="modal-title font-weight-bolder">Contact Us</h4>
                 <button type="button" class="close" data-dismiss="modal">×</button>
             </div>
         <div class="modal-body">

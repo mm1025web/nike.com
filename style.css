@@ -18,7 +18,7 @@ body{
 nav{
     z-index: 9999999!important;
 }
-#myModal,#myModal2,#myModal3,#myModal4,#form{
+#myModal,#myModal2,#myModal3,#myModal4,#myModal5,#form{
     z-index: 999999999!important;
     background: rgba(0, 0, 0, 0.5);
     
@@ -36,6 +36,7 @@ nav{
 nav{
     background: #292929!important;
 }
+
 .collapse a{
     color: white!important;
 }
