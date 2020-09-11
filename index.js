@@ -22,11 +22,11 @@ $(window).ready(function(){
 
 
 
-var totalCost = 0;
+var totalCost = 0,totalProducts=0;
   $('.buyNow').on('click',function(){
        //animation (+1)
      // alert($( ".ul li:nth-child(1)" ).attr( "id" ));
-     
+     totalProducts++;
     $(".empty").hide();
     $(".button").show();
     let id = $(this).attr("id");
@@ -57,7 +57,7 @@ var totalCost = 0;
          `<li class="ml-2 item" id="${id}">  
             <a href="#" class="addedItem">
                <img class="selectedImage" src="${src}">
-               <span class="product">Item</span>
+               <span class="product">Nike ${totalProducts}</span>
                <span id="" class="selectedPrice">₹${cost}</span>
                </span> 
             </a>        
