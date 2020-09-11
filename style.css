@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-
+    scroll-behavior: smooth;
 }
 /*PRELOADING------------ */
 
@@ -18,13 +18,15 @@ body{
 nav{
     z-index: 9999999!important;
 }
-#myModal,#myModal2,#myModal3,#myModal4,#myModal5,#form{
+#myModal,#myModal2,#myModal3,#myModal4,#myModal5,#form,#form1{
     z-index: 999999999!important;
     background: rgba(0, 0, 0, 0.5);
     
 }
 
-
+#form label{
+  font-weight: 500;
+}
 #myModal .modal-title{
     font-size: 20px;
 }
@@ -36,15 +38,100 @@ nav{
 nav{
     background: #292929!important;
 }
+.dropdown-toggle,.dropdown-toggle:focus,.dropdown-toggle:active{
+  border: none!important;
+  outline: none!important;
+}
+.dropdown-menu{
+  width: 250px!important;
+}
+.dropdown ul
+{
+    list-style-type: none;
+    z-index: 999999;
+}
+.ul{
+  margin-top: 0;
+}
+.ul .empty{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    font-size: 18px;
+}
+.ul li
+{
+    margin: 10px 5px;
+    padding: 5px 0 2px 5px;
+    border: 1px solid rgb(180, 180, 180);
+}    
+.ul li a{
+   text-decoration: none;
+   color: black;
+}
+.ul li a:hover{
+    color: black;
+}
+.ul li img
+{
+    vertical-align: middle!important; /* | top | bottom */
+    height: 90px;
+    width: 95px;
+    margin-top:-20px!important;
+}
+.ul li .namePrice{
+  display: inline-block!important;
+}
 
+.ul li .product
+{
+    display: inline-flex!important;
+    vertical-align: top; /* | top | bottom */
+    margin-left: 3px;
+    padding: 0px;
+    font-size: 21px;
+    font-weight: 700;
+}
+.ul li .selectedPrice
+{
+    display: inline-flex!important;
+    vertical-align: middle; /* | top | bottom */
+    margin:15px 0 0 -55px;
+    padding: 0px;
+}
+.ul li .removeItem{
+  transform: scale(1.5);
+  margin-left: 100%!important;
+}
+.ul li span{
+    font-size:14px;
+    font-weight: 500;
+    display: flex;
+}
+.ul .button{
+     margin-left: 27%;
+}
+.ul #total{
+  font-weight: 600;
+  margin: 0 0 10px 10px;
+}
+.margin{
+  margin-top:100px!important ;
+}
 .collapse a{
     color: white!important;
 }
-.navbar-toggler,.navbar-toggler:active{
+.close,.close:active,.close:focus{
+  border: none!important;
+  outline: none!important;
+}
+.navbar-toggler,.navbar-toggler:active,.navbar-toggler:focus{
     color: white;
     border: none!important;
+    outline: none!important;
 }
-.fa-angle-double-down{
+.fa-angle-double-down,
+  .fa-angle-double-up{
   color: white!important;
   font-size: 25px;
   border: none;
@@ -145,9 +232,9 @@ sub{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%) rotate(-80deg);
-    width:210px;
-    height: 230px;
+    transform: translate(-50%,-50%) rotate(-30deg);
+    margin-top:-20px ;
+    width:260px;
 }
 .container .card .imgBx3 img{
     position: absolute;
@@ -222,9 +309,15 @@ sub{
     border-radius: 4px;
     cursor: pointer;
 }
-.container .card .contentBx .size span:hover{
+.container .card .contentBx .size span:hover,
+  .container .card .contentBx .size span:active,
+    .container .card .contentBx .size span:focus{
     background: rgb(32, 32, 32);
     color: #fff;
+}
+.selected{
+  background: #fff;
+  color: #000;
 }
 .container .card .contentBx .color span{
     width: 20px;
@@ -234,7 +327,11 @@ sub{
     margin: 0 5px;
     cursor: pointer;
 }
-
+.container .card .contentBx .color span:hover,
+.container .card .contentBx .color span:active,
+  .container .card .contentBx .color span:focus{
+    border: 3px solid rgb(54, 54, 54);
+}
 .container .card .contentBx .box1 span:nth-child(2){
     background: #9bdc28;
 }
@@ -249,15 +346,15 @@ sub{
 
 
 .container .card .contentBx .box2 span:nth-child(2){
-    background: linear-gradient(rgb(255, 30, 0) 10px,rgb(2, 29, 123) 10px);
+    background: linear-gradient(rgb(255,80,93) 10px,rgb(55,169,212) 10px);
 }
 
 .container .card .contentBx .box2 span:nth-child(3){
-    background: linear-gradient(rgb(238, 255, 0) 10px,rgb(2, 29, 123) 10px);
+    background: linear-gradient(rgb(230,232,237) 10px,rgb(0, 0, 0) 10px);
 }
 
 .container .card .contentBx .box2 span:nth-child(4){
-    background: linear-gradient(rgb(0, 217, 255) 10px,rgb(2, 29, 123) 10px);
+    background: linear-gradient(rgb(170,167,173) 10px,rgb(91,93,95) 10px);
 }
 
 
@@ -331,13 +428,63 @@ sub{
     opacity: 0;
     transform: translateY(50px);
     transition: 0.5s;
+    
+}
+.container .card .contentBx a:hover{
+  background:#000;
+  color:#fff;
 }
 .container .card:hover .contentBx a{
     opacity: 1;
     transform: translateY(0px);
-    transition-delay: 0.75s;
+    transition-delay: 0.35s;
 }
 
+
+.added__animation {
+	 position: relative;
+	 /* top: -50px;
+	 left: 0;
+	 right: 0;
+   bottom: 0; */
+   top: 0%;
+   left: 0%;
+	 margin: auto;
+	 height: 45px;
+	 width: 45px;
+	 display: inline-block;
+	 border: 5px solid rgb(255, 255, 255);
+	 border-radius: 50%;
+	 text-align: center;
+	 opacity: 0;
+   z-index:9999999999;
+	 transform: scale(0.75) translateY(0px);
+   transition: opacity 0.2s ease, transform 0.6s cubic-bezier(0.18, 1.22, 0.61, 1.38);
+   
+   
+}
+ .added__animation span {
+	 color: rgb(255, 255, 255);
+	 display: inline-block;
+	 position: absolute;
+	 left: 0;
+	 right: 0;
+	 bottom: 0;
+	 top: 0;
+	 height: 15px;
+	 width: 100%;
+	 margin: auto;
+	 text-align: center;
+	 font-size: 17px;
+	 line-height: 1em;
+	 font-weight: 900;
+	 letter-spacing: 0.1em;
+}
+ .added__animation .clicked {
+	 opacity: 1!important;
+	 transform: scale(1) translateY(-30px);
+}
+ 
 
 
 
@@ -448,12 +595,32 @@ footer {
   border-top: 1px solid #ccc;
   margin-top: 10px
 }
+.mx-2 i{
+  background: rgb(43, 43, 43);
+  padding: 3px 7px 5px 7px;
+  border-radius: 50%;
+  font-size: 25px;  
+  font-weight: bolder;
+  color: #008fe2;
+  animation: bounce .5s infinite alternate;
+}
+@keyframes bounce{
+  0%{
+    transform: translateY(5px);
+  }
+  100%{
+    transform: translateY(-5px);
+  }
+}
 .footer-bottom-section > div:first-child {
   margin-right: auto
 }
 .footer-bottom-wrapper {
   font-size: 1.5em;
-  color: #fff
+  color: #fff;
+}
+.footer-bottom-wrapper a{
+  text-decoration: none;
 }
 .footer-address {
   display: inline;
