@@ -124,10 +124,10 @@ $('.green').click(function(){
      $("#image").attr("src","images/shoes111.png");   
  }); 
 $('.blue').click(function(){ 
-     $("#image").attr("src","images/shoes112.png");   
+     $("#image").attr("src","images/shoes113.png");   
 }); 
 $('.pink').click(function(){ 
-     $("#image").attr("src","images/shoes113.png");   
+     $("#image").attr("src","images/shoes112.png");   
  }); 
 
 $('.orange').click(function(){ 
