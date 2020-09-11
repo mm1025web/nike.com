@@ -87,7 +87,7 @@ nav{
 {
     display: inline-flex!important;
     vertical-align: top; /* | top | bottom */
-    margin-left: 3px;
+    margin-left: 15px;
     padding: 0px;
     font-size: 21px;
     font-weight: 700;
@@ -96,7 +96,7 @@ nav{
 {
     display: inline-flex!important;
     vertical-align: middle; /* | top | bottom */
-    margin:15px 0 0 -55px;
+    margin:15px 0 0 -52px;
     padding: 0px;
 }
 .ul li .removeItem{
@@ -227,6 +227,7 @@ sub{
     left: 50%;
     transform: translate(-50%,-50%) rotate(-25deg);
     width:240px;
+    height:230px;
 }
 .container .card .imgBx2 img{
     position: absolute;

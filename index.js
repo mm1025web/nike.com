@@ -121,13 +121,13 @@ $('.cart').click(function(){
 //  }); 
 
 $('.green').click(function(){ 
-     $("#image").attr("src","images/shoes.png");   
+     $("#image").attr("src","images/shoes111.png");   
  }); 
 $('.blue').click(function(){ 
-     $("#image").attr("src","images/shoes1.png");   
+     $("#image").attr("src","images/shoes112.png");   
 }); 
 $('.pink').click(function(){ 
-     $("#image").attr("src","images/shoes2.png");   
+     $("#image").attr("src","images/shoes113.png");   
  }); 
 
 $('.orange').click(function(){ 
