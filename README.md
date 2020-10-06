@@ -1,5 +1,15 @@
 # nike.com
 http://mm1025web.github.io/nike.com
+<h2 align= "left"><b>Tech Stack Used</b></h2>
+
+*WEB*
+
+- HTML5
+- CSS
+- Bootstrap
+- jQuery
+
+
 <p align="left">
 <img width=45% src="NikeREADME/img1.PNG"> &ensp;
 <img width=45% src="NikeREADME/img2.PNG"> &ensp;
