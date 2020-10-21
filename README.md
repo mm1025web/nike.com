@@ -1,5 +1,5 @@
 # nike.com
-http://mm1025web.github.io/nike.com
+http://mmuazam98.github.io/nike.com
 <h2 align= "left"><b>Tech Stack Used</b></h2>
 
 *WEB*
